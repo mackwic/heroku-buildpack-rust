@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 # Find all the directories we might need (based on
 # heroku-buildpack-nodejs code).
