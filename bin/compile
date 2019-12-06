@@ -142,7 +142,6 @@ if [ $RUST_SKIP_BUILD -ne 1 ]; then
   mkdir -p $BINARY_DIR
   find "$CARGO_TARGET_DIR/release" -type f -executable -exec cp -a -t $BINARY_DIR {} \;
   ls -lAFH $BINARY_DIR
-  ls -lAFH $BINARY_DIR/*/
 else
   echo "-----> Skipping Cargo build"
 fi
