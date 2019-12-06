@@ -6,6 +6,7 @@ BUILD_DIR=${1:-}
 CACHE_DIR=${2:-}
 ENV_DIR=${3:-}
 BP_DIR=$(cd $(dirname ${0:-}); cd ..; pwd)
+DEBUG_BUILDPACK=0
 
 # Export DATABASE_URL at build time, mostly because Diesel is the best way to
 # do SQL in Rust right now, and Diesel will use it to generate code for the
