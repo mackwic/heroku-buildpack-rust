@@ -50,7 +50,7 @@ fi
 set -eu
 
 if [ "$DEBUG_BUILDPACK" -eq 1 ]; then
-  set +x
+  set -x
 fi
 
 # Check our configuration options.
